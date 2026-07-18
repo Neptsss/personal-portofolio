@@ -102,7 +102,7 @@ export default function Projects() {
             title='Projects'
             children={
                 <div>
-                    <div className='p-6 flex justify-center items-stretch gap-10 flex-wrap'>
+                    <div className='md:lg:xl:p-6 flex justify-center items-stretch gap-10 flex-wrap'>
                         {
                             projects.slice(0,visibleProjects).map((item: Project) => (
                                 <div className='max-w-md flex flex-col w-full rounded-lg bg-gray-800/75 p-6 backdrop-blur-xl' key={item.id} data-aos="fade-up" data-aos-delay={`${item.id}00`}>
@@ -144,13 +144,23 @@ export default function Projects() {
                                                 {item.link.demo && (
                                                     <div className='flex items-center gap-2 group '>
                                                         <a href={item.link.demo} target='_blank' className='block group-hover:text-teal-400 duration-500 group-hover:font-semibold md:lg:xl:text-base text-sm'>View Website</a>
-                                                        <FontAwesomeIcon icon={faUpRightFromSquare} className=' group-hover:text-teal-400 duration-500 group-hover:font-semibold md:lg:xl:block hidden' />
+                                                        <span className='hidden md:block'>
+                                                            <FontAwesomeIcon
+                                                                icon={faUpRightFromSquare}
+                                                                className='group-hover:text-teal-400 duration-500'
+                                                            />
+                                                        </span>
                                                     </div>
                                                 )}
                                                 {item.link.github && (
                                                     <div className='flex items-center gap-2 group '>
                                                         <a href={item.link.github} target='_blank' className='block group-hover:text-teal-400 duration-500 group-hover:font-semibold md:lg:xl:text-base text-sm'>View Repository</a>
-                                                        <FontAwesomeIcon icon={faGithub} className=' group-hover:text-teal-400 duration-500 group-hover:font-semibold md:lg:xl:block hidden' />
+                                                        <span className='hidden md:block'>
+                                                            <FontAwesomeIcon
+                                                                icon={faGithub}
+                                                                className='group-hover:text-teal-400 duration-500'
+                                                            />
+                                                        </span>
                                                     </div>
                                                 )}
                                             </div>
