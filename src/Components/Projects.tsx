@@ -5,6 +5,13 @@ import { type IconType } from 'react-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { SiBootstrap, SiCodeigniter, SiJavascript, SiLaravel, SiMysql, SiPhp, SiReact, SiTailwindcss } from 'react-icons/si';
+
+import archiveImg from '../assets/image/project/archive.png';
+import paradiseImg from '../assets/image/project/paradise.png';
+import kepegawaianImg from '../assets/image/project/kepegawaian.png';
+import gudangImg from '../assets/image/project/gudang.png';
+import currencyImg from '../assets/image/project/currency.png';
+
 type Project = {
     id: number;
     title: string;
@@ -28,7 +35,7 @@ export default function Projects() {
                 { icon: SiLaravel, color: "text-red-500" },
                 { icon: SiTailwindcss, color: "text-cyan-400" }
             ],
-            image: "src/assets/image/project/archive.png",
+            image: archiveImg,
             link: { demo: "", github: "" }
         },
         {
@@ -40,7 +47,7 @@ export default function Projects() {
                 { icon: SiTailwindcss, color: "text-cyan-400" },
                 { icon: SiReact, color: "text-cyan-500" }
             ],
-            image: "src/assets/image/project/paradise.png",
+            image: paradiseImg,
             link: { demo: "https://paradisemassage.biz.id", github: "https://github.com/Neptsss/paradise-massage" }
         },
         {
@@ -54,7 +61,7 @@ export default function Projects() {
                 { icon: SiCodeigniter, color: "text-orange-500" },
                 { icon: SiBootstrap, color: "text-purple-500" }
             ],
-            image: "src/assets/image/project/kepegawaian.png",
+            image: kepegawaianImg,
             link: { demo: "", github: "" }
         },
         {
@@ -69,7 +76,7 @@ export default function Projects() {
                 { icon: SiBootstrap, color: "text-purple-500" }
 
             ],
-            image: "src/assets/image/project/gudang.png",
+            image: gudangImg,
             link: { demo: "", github: "https://github.com/pengelolaan-gudang-smea/gudang-app" }
         }, {
             id: 5,
@@ -82,7 +89,7 @@ export default function Projects() {
                 { icon: SiLaravel, color: "text-red-500" },
                 { icon: SiTailwindcss, color: "text-cyan-400" },
             ],
-            image: "src/assets/image/project/currency.png",
+            image: currencyImg,
             link: { demo: "", github: "" }
         }
     ]
