@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import Section from './Section'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { type IconType } from 'react-icons';
